@@ -36,7 +36,7 @@
         "publish": "npm run build && npm publish --access public"
     },
     "peerDependencies": {
-        "eslint": "^8.22.0",
+        "eslint": "8.22.0",
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
         "eslint-config-airbnb": "^19.0.4",
@@ -52,7 +52,7 @@
         "eslint-plugin-sonarjs": "^0.17.0"
     },
     "dependencies": {
-        "eslint": "^8.22.0",
+        "eslint": "8.22.0",
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
         "eslint-config-airbnb": "^19.0.4",
