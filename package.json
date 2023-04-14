@@ -1,16 +1,18 @@
 {
     "name": "@aramazanov/eslint-config",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Eslint config for personal usages",
     "files": [
         "/lib",
         "package.json",
+        "tsconfig.json",
         "README.md"
     ],
     "keywords": [
         "eslint",
         "eslintconfig",
         "react",
+        "typescript",
         "react-typescript",
         "aramazanov"
     ],
@@ -31,14 +33,14 @@
         "version:major": "yarn version --major --no-git-tag-version",
         "version:minor": "yarn version --minor --no-git-tag-version",
         "version:patch": "yarn version --patch --no-git-tag-version",
-        "publish": "npm publish --access public"
+        "publish": "npm run build && npm publish --access public"
     },
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-import-resolver-typescript": "^3.5.2",
+        "eslint-import-resolver-typescript": "3.5.0",
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-jsdoc": "^40.0.0",
         "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -53,7 +55,7 @@
         "@typescript-eslint/parser": "^5.46.1",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-import-resolver-typescript": "^3.5.2",
+        "eslint-import-resolver-typescript": "3.5.0",
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-jsdoc": "^40.0.0",
         "eslint-plugin-jsx-a11y": "^6.7.1",

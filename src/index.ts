@@ -37,21 +37,9 @@ const config: Linter.Config = {
         '@typescript-eslint/no-unused-vars': Setting.WARN,
         '@typescript-eslint/explicit-module-boundary-types': Setting.OFF,
         '@typescript-eslint/no-var-requires': Setting.ERROR,
-        '@typescript-eslint/naming-convention': [
-            'error',
-            {
-                selector: 'default',
-                format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-                leadingUnderscore: 'allow',
-                trailingUnderscore: 'allow'
-            },
-            { selector: 'typeLike', format: ['PascalCase'] },
-            { selector: 'enum', format: ['PascalCase', 'UPPER_CASE'] }
-        ],
         'dot-notation': Setting.OFF,
         '@typescript-eslint/dot-notation': [Setting.WARN],
         '@typescript-eslint/explicit-member-accessibility': Setting.OFF,
-        indent: Setting.OFF,
         '@typescript-eslint/indent': 'off',
         'no-empty-function': Setting.OFF,
         '@typescript-eslint/no-empty-function': Setting.OFF,
@@ -96,7 +84,6 @@ const config: Linter.Config = {
         'no-caller': Setting.ERROR,
         'no-eval': Setting.ERROR,
         'no-new-wrappers': Setting.ERROR,
-        'no-shadow': [Setting.ERROR, { hoist: 'all' }],
         'no-trailing-spaces': Setting.ERROR,
         'no-var': Setting.ERROR,
         radix: Setting.ERROR,
@@ -138,11 +125,30 @@ const config: Linter.Config = {
             ]
         }],
         'jsx-a11y/no-static-element-interactions': Setting.OFF,
-        'react/function-component-definition': Setting.OFF,
+        'react/function-component-definition': [Setting.ERROR, {
+            'namedComponents': 'arrow-function',
+            'unnamedComponents': 'arrow-function'
+        }],
         'object-curly-newline': Setting.OFF,
         'arrow-body-style': Setting.OFF,
         'react/jsx-one-expression-per-line': Setting.OFF,
-        'promise/always-return': Setting.OFF
+        'promise/always-return': Setting.OFF,
+        "no-tabs": Setting.OFF,
+        "react/react-in-jsx-scope": Setting.OFF,
+        "indent": [Setting.ERROR, 4],
+        "react/jsx-indent": [Setting.ERROR, 4],
+        "react/jsx-indent-props": [Setting.ERROR, 4],
+        "linebreak-style": [Setting.ERROR, "windows"],
+        "@typescript-eslint/naming-convention": [
+            "warn", {
+                "selector": "default",
+                "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+            }],
+        "no-shadow": Setting.OFF,
+        "@typescript-eslint/no-shadow": Setting.ERROR,
+        "sonarjs/no-duplicate-string": Setting.OFF,
+        "react/no-array-index-key": Setting.OFF,
+        "jsx-a11y/mouse-events-have-key-events": Setting.OFF
     },
     settings: {
         'import/resolver': {
