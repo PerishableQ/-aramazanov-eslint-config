@@ -38,7 +38,7 @@
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
-        "eslint": "8.22.0",
+        "eslint": "^7.0.0 || ^8.0.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-typescript": "3.5.0",
@@ -54,7 +54,6 @@
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
-        "eslint": "8.22.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-typescript": "3.5.0",
