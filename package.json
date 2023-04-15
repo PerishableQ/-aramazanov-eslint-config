@@ -1,6 +1,6 @@
 {
     "name": "@aramazanov/eslint-config",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Eslint config for personal usages",
     "files": [
         "/lib",
@@ -36,9 +36,9 @@
         "publish": "npm run build && npm publish --access public"
     },
     "peerDependencies": {
-        "eslint": "8.22.0",
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
+        "eslint": "8.22.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-typescript": "3.5.0",
@@ -52,9 +52,9 @@
         "eslint-plugin-sonarjs": "^0.17.0"
     },
     "dependencies": {
-        "eslint": "8.22.0",
         "@typescript-eslint/eslint-plugin": "^5.52.0",
         "@typescript-eslint/parser": "^5.46.1",
+        "eslint": "8.22.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-typescript": "3.5.0",
