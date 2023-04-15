@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/PerishableQ/eslint-config",
     "scripts": {
-        "build": "tsc --declaration",
+        "build": "tsc",
         "version:major": "yarn version --major --no-git-tag-version",
         "version:minor": "yarn version --minor --no-git-tag-version",
         "version:patch": "yarn version --patch --no-git-tag-version",
