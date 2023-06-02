@@ -1,6 +1,6 @@
 {
     "name": "@aramazanov/eslint-config",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Eslint config for corporate usage",
     "files": [
         "/lib",
