@@ -1,7 +1,7 @@
 {
     "name": "@aramazanov/eslint-config",
     "version": "1.0.3",
-    "description": "Eslint config for personal usages",
+    "description": "Eslint config for corporate usage",
     "files": [
         "/lib",
         "package.json",
@@ -10,11 +10,10 @@
     ],
     "keywords": [
         "eslint",
-        "eslintconfig",
+        "eslint config",
         "react",
         "typescript",
-        "react-typescript",
-        "aramazanov"
+        "react-typescript"
     ],
     "main": "lib/index.js",
     "module": "lib/index.js",
@@ -30,10 +29,14 @@
     "homepage": "https://github.com/PerishableQ/eslint-config",
     "scripts": {
         "build": "tsc",
+
         "version:major": "yarn version --major --no-git-tag-version",
         "version:minor": "yarn version --minor --no-git-tag-version",
         "version:patch": "yarn version --patch --no-git-tag-version",
-        "publish": "npm run build && npm publish --access public"
+
+        "publish:major": "npm run build&&npm run version:major&&npm publish --access public",
+        "publish:minor": "npm run build&&npm run version:minor&&npm publish --access public",
+        "publish:patch": "npm run build&&npm run version:patch&&npm publish --access public"
     },
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.52.0",
