@@ -30,9 +30,9 @@
     "scripts": {
         "build": "tsc",
 
-        "version:major": "yarn version --major --no-git-tag-version",
-        "version:minor": "yarn version --minor --no-git-tag-version",
-        "version:patch": "yarn version --patch --no-git-tag-version",
+        "version:major": "yarn version major",
+        "version:minor": "yarn version minor",
+        "version:patch": "yarn version patch",
 
         "publish:major": "npm run build&&npm run version:major&&npm publish --access public",
         "publish:minor": "npm run build&&npm run version:minor&&npm publish --access public",
