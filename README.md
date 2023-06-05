@@ -24,6 +24,23 @@ yarn add -D https://github.com/PerishableQ/eslint-config.git eslint
   }
   ```
 
+Base config suits for node project usage, so if you want to use this config in React project,
+you have to extend it from /react import path
+
+  ```
+  {
+    "extends": ["@aramazanov/eslint-config/react"],
+  }
+  ```
+
+You can explicitly specify node config usage by providing /node
+
+  ```
+  {
+    "extends": ["@aramazanov/eslint-config/node"],
+  }
+  ```
+
 2. Add script to package.json
 
   ```

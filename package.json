@@ -1,9 +1,9 @@
 {
     "name": "@aramazanov/eslint-config",
-    "version": "1.0.4",
+    "version": "2.0.1",
     "description": "Eslint config for corporate usage",
     "files": [
-        "/lib",
+        "/dist",
         "package.json",
         "tsconfig.json",
         "README.md"
@@ -11,12 +11,16 @@
     "keywords": [
         "eslint",
         "eslint config",
+        "node",
         "react",
         "typescript",
         "react-typescript"
     ],
-    "main": "lib/index.js",
-    "module": "lib/index.js",
+    "exports": {
+        ".": "./dist/node.js",
+        "./node": "./dist/node.js",
+        "./react": "./dist/react.js"
+    },
     "author": "Almaz Ramazanov",
     "license": "MIT",
     "publishConfig": {
@@ -29,42 +33,35 @@
     "homepage": "https://github.com/PerishableQ/eslint-config",
     "scripts": {
         "build": "tsc",
-
         "version:major": "yarn version major",
         "version:minor": "yarn version minor",
         "version:patch": "yarn version patch",
-
         "publish:major": "npm run build&&npm run version:major&&npm publish --access public",
         "publish:minor": "npm run build&&npm run version:minor&&npm publish --access public",
         "publish:patch": "npm run build&&npm run version:patch&&npm publish --access public"
     },
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.52.0",
-        "@typescript-eslint/parser": "^5.46.1",
+        "@typescript-eslint/eslint-plugin": "^5.59.8",
+        "@typescript-eslint/parser": "^5.59.8",
         "eslint": "^7.0.0 || ^8.0.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-import-resolver-typescript": "3.5.0",
+        "eslint-import-resolver-typescript": "^3.5.5",
         "eslint-plugin-import": "^2.27.5",
-        "eslint-plugin-jsdoc": "^40.0.0",
         "eslint-plugin-jsx-a11y": "^6.7.1",
-        "eslint-plugin-optimize-regex": "^1.2.1",
-        "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-react": "^7.32.2",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-sonarjs": "^0.17.0"
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.52.0",
-        "@typescript-eslint/parser": "^5.46.1",
+        "@typescript-eslint/eslint-plugin": "^5.59.8",
+        "@typescript-eslint/parser": "^5.59.8",
+        "eslint": "^7.0.0 || ^8.0.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-import-resolver-typescript": "3.5.0",
+        "eslint-import-resolver-typescript": "^3.5.5",
         "eslint-plugin-import": "^2.27.5",
-        "eslint-plugin-jsdoc": "^40.0.0",
         "eslint-plugin-jsx-a11y": "^6.7.1",
-        "eslint-plugin-optimize-regex": "^1.2.1",
-        "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-react": "^7.32.2",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-sonarjs": "^0.17.0"
