@@ -1,8 +1,9 @@
 {
     "extends": "tsconfigs/nodejs-module",
     "compilerOptions": {
-        "outDir": "lib",
-        "declaration": true
+        "outDir": "dist",
+        "declaration": false,
+        "sourceMap": false
     },
     "include": [
         "src/**/*.ts"
