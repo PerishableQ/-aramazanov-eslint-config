@@ -25,6 +25,9 @@ const config = {
         "import",
         "sonarjs"
     ],
+    "settings": {
+        "import/resolver": "typescript"
+    },
     rules: {
         "@typescript-eslint/indent": ["error", 4],
         "@typescript-eslint/no-empty-interface": ["off"],
